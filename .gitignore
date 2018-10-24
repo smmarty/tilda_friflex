@@ -1,0 +1,23 @@
+.idea
+.git
+.config
+Gemfile.lock
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/vendor/
+# rspec failure tracking
+.rspec_status
+
+# dockerized development environment
+Dockerfile
+docker-compose.yml
+Makefile
+
+# misc test files
+test.rb
