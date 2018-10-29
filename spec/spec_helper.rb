@@ -1,5 +1,6 @@
-Dir[File.dirname(__FILE__) + "/supports/**/*.rb"].each {|f| require f }
+require 'tilda'
 
+Dir[File.dirname(__FILE__) + "/supports/**/*.rb"].each {|f| require f }
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

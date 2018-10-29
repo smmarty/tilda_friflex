@@ -1,5 +1,3 @@
-require 'tilda'
-
 describe Tilda::Client do
   let(:public_key){ENV.fetch("TILDA_PUBLIC_KEY")}
   let(:secret_key){ENV.fetch("TILDA_SECRET_KEY")}
