@@ -1,6 +1,6 @@
-require './lib/tilda/version'
-require './lib/tilda/config'
-require './lib/tilda/client'
+require 'tilda/version'
+require 'tilda/config'
+require 'tilda/client'
 
 module Tilda
 
