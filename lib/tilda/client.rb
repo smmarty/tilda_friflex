@@ -8,7 +8,7 @@ module Tilda
     parser(
       proc do |body, format|
         #raise Error if format != :json
-        JSON.parse body
+        JSON.parse(body, { symbolize_names: true })
       end
     )
 
