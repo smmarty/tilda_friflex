@@ -12,12 +12,12 @@ module Tilda
     end
 
     def save_page(id)
-      page = @client.get_page_export(id)
-      #page[:result][:html] = nil
+      page = @client.get_page_full_export(id)
+      #raise Exception if page[:status] != 'SUCCESS'
       save_js(page[:result])
       save_css(page[:result])
       save_img(page[:result])
-      #page
+      save_html(page[:result])
     end
 
     private
@@ -44,6 +44,11 @@ module Tilda
 
     def save_img(files)
       save_files(files[:images])  unless files[:images].nil?
+    end
+
+    def save_html(result_obj)
+      full_name = "#{@save_path}/#{result_obj[:filename]}"
+      File.open(full_name, "w") { |file| file.write(result_obj[:html]) }
     end
 
   end
