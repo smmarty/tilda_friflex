@@ -7,7 +7,7 @@ module Tilda
 
     parser(
       proc do |body, format|
-        #raise Error if format != :json
+        #raise 'Error while parsing response' if format != :json #TODO: replace with Error class
         JSON.parse(body, { symbolize_names: true })
       end
     )
