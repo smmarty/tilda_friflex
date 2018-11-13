@@ -1,8 +1,11 @@
 # Tilda
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tilda`. To experiment with that code, run `bin/console` for an interactive prompt.
+English version will be later (or not)
 
-TODO: Delete this and the text above, and describe your gem
+Этот гем позволяет работать с API сайта Tilda.cc (tilda.ws)
+Пока готова только часть, которая позволяет делать API запросы.
+
+Далее планируются отдельные слои, для работы со страницей, кэширования страниц локально и рендеринга страниц во view.
 
 ## Installation
 
@@ -22,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Смотри папку examples
 
 ## Development
 
@@ -32,7 +35,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tilda.
 
 ## License
 
