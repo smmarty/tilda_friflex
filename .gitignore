@@ -1,5 +1,6 @@
 .idea
 .git
+.gem
 .config
 Gemfile.lock
 /.bundle/

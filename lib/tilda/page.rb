@@ -78,7 +78,7 @@ module Tilda
 
     def save_html(path)
       full_name = "#{path}/#{get_html_filename}"
-      File.open(full_name, "w") { |file| file.write(get_html_code) }
+      File.open(full_name, "wb") { |file| file.write(get_html_code) }
     end
 
     def save(path)
@@ -91,7 +91,7 @@ module Tilda
     private
 
     def download_file(url, full_name)
-      File.open(full_name, "w") do |file|
+      File.open(full_name, "wb") do |file|
         HTTParty.get(url, stream_body: true) { |fragment| file.write(fragment) }
       end
     end
